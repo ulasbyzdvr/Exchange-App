@@ -26,7 +26,8 @@ class ExchangeProvider with ChangeNotifier {
   }
 
   Future getRate(String to, base) async {
-    rate = await exchangeServices.getRate("latest", base, to);
+    rate = 
+        await exchangeServices.getRate("latest", base, to);
     notifyListeners();
   }
 
